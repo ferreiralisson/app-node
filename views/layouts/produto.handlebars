@@ -1,0 +1,63 @@
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">Cadastro de Cliente</div>
+        <div class="card-body card-block">
+            <form action="/cliente/create" method="post" class="">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">Descrição</div>
+                        <input type="text" id="nome" name="nome" class="form-control">
+                        <div class="input-group-addon"><i class="fa fa-edit"></i></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">Valor</div>
+                        <input type="text" id="cpf" name="cpf" class="form-control">
+                        <div class="input-group-addon"><i class="fa fa-money"></i></div>
+                    </div>
+                </div>
+                <div class="form-actions form-group">
+                    <button type="submit" class="btn btn-primary btn-sm">Incluir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="content mt-3">
+    <div class="animated fadeIn">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Data Table</strong>
+                    </div>
+                    <div class="card-body">
+                        <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>$320,800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div><!-- .animated -->
+</div><!-- .content -->

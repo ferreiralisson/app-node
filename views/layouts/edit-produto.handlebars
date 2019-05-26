@@ -1,0 +1,22 @@
+<div class="modal-body">
+    <form action="/produto/update/{{produto.id}}" method="post">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">Descriçao</div>
+                <input type="text" id="descricao" name="descricao" class="form-control" value="{{produto.descricao}}">
+                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">Valor</div>
+                <input type="text" id="valor" name="valor" class="form-control" value="{{produto.valor}}">
+                <div class="input-group-addon"><i class="fa fa-plus"></i></div>
+            </div>
+        </div>
+        <div class="form-actions form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Atualizar</button>
+        </div>
+    </form>
+</div>
+

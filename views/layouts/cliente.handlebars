@@ -2,23 +2,28 @@
     <div class="card">
         <div class="card-header">Cadastro de Cliente</div>
         <div class="card-body card-block">
-            <form action="/cli/create" method="post">
+            <form action="/create" method="post">
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon">Nome</div>
-                        <input type="text" id="nome" name="nome" class="form-control">
+                        <input type="text" id="nome" 
+                        name="nome" 
+                        class="form-control" maxlength="30" required>
                         <div class="input-group-addon"><i class="fa fa-user"></i></div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon">CPF</div>
-                        <input type="text" id="cpf" name="cpf" class="form-control">
+                        <input type="text" 
+                        id="cpf" name="cpf"
+                        class="form-control" required>
                         <div class="input-group-addon"><i class="fa fa-plus"></i></div>
                     </div>
                 </div>
-                <div class="form-actions form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Incluir</button>
+                <div class="form-actions form-group text-right">
+                    <input class="btn btn-success btn-lg" type="submit" value="Incluir">
+                    <input class="btn btn-danger btn-lg" type="reset" value="Limpar">
                 </div>
             </form>
         </div>
@@ -51,8 +56,12 @@
                                     <td>{{nome}}</td>
                                     <td>{{cpf}}</td>
                                     <td style="text-align: center">
-                                        <a href="#"><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#largeModal"><i class="fa fa-edit"></i>&nbsp; Editar</button></a>
-                                         <a href="/cli/delete/{{id}}"><button type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i>&nbsp; Apagar</button></a>
+                                        <a href="/one/{{id}}"><button type="button" class="btn btn-outline-primary"
+                                                data-toggle="modal" data-target="#largeModal"><i
+                                                    class="fa fa-edit"></i>Editar</button></a>
+                                        <a href="/delete/{{id}}"><button type="button"
+                                                class="btn btn-outline-danger"><i
+                                                    class="fa fa-trash-o"></i>Apagar</button></a>
                                     </td>
                                 </tr>
                                 {{/each}}
@@ -63,39 +72,5 @@
             </div>
         </div>
     </div>
-
-<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="largeModalLabel">Large Modal</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    There are three species of zebras: the plains zebra, the mountain zebra and the Grévy's zebra. The
-                    plains zebra
-                    and the mountain zebra belong to the subgenus Hippotigris, but Grévy's zebra is the sole species of
-                    subgenus
-                    Dolichohippus. The latter resembles an ass, to which it is closely related, while the former two are
-                    more
-                    horse-like. All three belong to the genus Equus, along with other living equids.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Confirm</button>
-            </div>
-        </div>
-    </div>
 </div>
 
-
-</div>
-
-
-
-               

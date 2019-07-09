@@ -18,7 +18,7 @@ npm install
 
 👤 **Alisson Ferreira**
 
-* Twitter: [@@ferreiralisson1](https://twitter.com/@ferreiralisson1)
+* Twitter: [@ferreiralisson1](https://twitter.com/@ferreiralisson1)
 * Github: [@ferreiralisson](https://github.com/ferreiralisson)
 
 ## Show your support
